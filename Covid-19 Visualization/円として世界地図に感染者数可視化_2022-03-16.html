@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_d99b24f3b5cd40ae8eecc6ee73a30d1b {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_d99b24f3b5cd40ae8eecc6ee73a30d1b" ></div>
+</body>
+<script>    
+    
+    
+        var southWest = L.latLng(-90, -180);
+        var northEast = L.latLng(90, 180);
+        var bounds = L.latLngBounds(southWest, northEast);
+    
+
+    var map_d99b24f3b5cd40ae8eecc6ee73a30d1b = L.map(
+        'map_d99b24f3b5cd40ae8eecc6ee73a30d1b', {
+        center: [35.6528, 139.8394],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_9e5f5ad7bd484584922125a061bc0c7a = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 3,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_d99b24f3b5cd40ae8eecc6ee73a30d1b);
+    
+            var circle_marker_3dc114a903914b7d8b19093efee29e71 = L.circleMarker(
+                [37.3358, 126.584],
+                {
+  "bubblingMouseEvents": true,
+  "color": "white",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "white",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2071.056666666667,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d99b24f3b5cd40ae8eecc6ee73a30d1b);
+            
+    
+        circle_marker_3dc114a903914b7d8b19093efee29e71.bindTooltip(
+            `<div>`
+            + `<h4><b>韓国</h4></b><br><b> 日付:</b> 2022-03-16<br><b> 新規感染者数:</b> 621317人<br><b> 累積感染者数:</b> 8250592人<br>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3d6432ff209e4b1086188bdc53c0a098 = L.circleMarker(
+                [35.6528, 139.8394],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 192.74,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d99b24f3b5cd40ae8eecc6ee73a30d1b);
+            
+    
+        circle_marker_3d6432ff209e4b1086188bdc53c0a098.bindTooltip(
+            `<div>`
+            + `<h4><b>日本</h4></b><br><b> 日付:</b> 2022-03-16<br><b> 新規感染者数:</b> 57822人<br><b> 累積感染者数:</b> 5913591人<br>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_65f20ba292424803b9065afc006785af = L.circleMarker(
+                [51.5072, -0.1275],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 311.92,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d99b24f3b5cd40ae8eecc6ee73a30d1b);
+            
+    
+        circle_marker_65f20ba292424803b9065afc006785af.bindTooltip(
+            `<div>`
+            + `<h4><b>イギリス</h4></b><br><b> 日付:</b> 2022-03-16<br><b> 新規感染者数:</b> 93576人<br><b> 累積感染者数:</b> 19971022人<br>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_1951e4e04b6548c690c34dd30df466a7 = L.circleMarker(
+                [37.7618, -104.881],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 150.05,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d99b24f3b5cd40ae8eecc6ee73a30d1b);
+            
+    
+        circle_marker_1951e4e04b6548c690c34dd30df466a7.bindTooltip(
+            `<div>`
+            + `<h4><b>アメリカ</h4></b><br><b> 日付:</b> 2022-03-16<br><b> 新規感染者数:</b> 45015人<br><b> 累積感染者数:</b> 79630853人<br>` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
